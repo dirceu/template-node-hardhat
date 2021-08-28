@@ -9,9 +9,8 @@ ports:
 tasks:
   - init: |
       npm install
-      npm run build
     command: |
-      npm run start
+      npx hardhat run scripts/sample-script.js
 vscode:
   extensions:
     - dbaeumer.vscode-eslint
